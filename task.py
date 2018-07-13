@@ -3,7 +3,7 @@ import time
 
 url = 'https://api.github.com/search/repositories?q=stars%3A'
 base = 100
-step = base/100
+step = base/10
 k = 0
 for i in range(base,base*10,step):
     r = requests.get(url+str(i)+".."+str(i+step))
