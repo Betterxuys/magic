@@ -2,7 +2,7 @@ import requests
 import time
 
 url = 'https://api.github.com/search/repositories?q=stars%3A'
-base = 100
+base = 10000
 step = int(base/10)
 k = 0
 for i in range(base,base*10,step):
